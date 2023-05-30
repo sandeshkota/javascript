@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Unit Testing in Javascript</title>
+  </head>
+  
+  <body>
+    Repeat Message: 
+    <input id="repeatMessage" type="text" placeholder="enter repeat message.." value="Hello folks! " />
+    
+    <br/>
+    Repeat Count: 
+    <input id="repeatCount" type="text" placeholder="enter repeat count.." value="3" />
+
+    <br/>
+    <input id="repeatBtn" type="button" value="Repeat" onclick="RepeatAndPrint()" />
+
+    <br/><br/>
+
+    Result:
+    <span id="container"></span>
+    <script src="sample.js" ></script>
+    <script>
+      function RepeatAndPrint() {
+        let repeatMessage = document.getElementById("repeatMessage");
+        let repeatCount = document.getElementById("repeatCount");
+        let container = document.getElementById("container");
+        let repeatedValue  = $myapp.repeater(repeatMessage.value, repeatCount.value);
+        container.innerHTML = repeatedValue;
+      }
+    </script>
+  </body>
+</html>
