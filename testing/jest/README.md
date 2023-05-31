@@ -8,3 +8,18 @@
 - go to jest folder
 - Run "npm i"
 - Run "npm run test"
+
+### Events
+```js script
+beforeAll(() => { });
+afterAll(() => { });
+beforeEach(() => { });
+afterEach(() => { });
+
+describe('matching cities to foods', () => {
+    beforeAll(() => { });
+    afterAll(() => { });
+    beforeEach(() => { });
+    afterEach(() => { });
+});
+```
